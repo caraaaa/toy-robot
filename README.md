@@ -72,17 +72,17 @@ To run tests, simply run `pytest`.
 Example:
 ```
 $ pytest
-============================ test session starts =============================
+============================= test session starts ==============================
 platform linux -- Python 3.10.12, pytest-8.1.1, pluggy-1.4.0
-rootdir: /home/cara/toy-robot
-plugins: cov-5.0.0
-collected 61 items
+rootdir: /home/cara/codes/toy-robot
+plugins: mock-3.14.0
+collected 72 items
 
-command_test.py ................                                       [ 26%]
-main_test.py .......                                                   [ 37%]
-robot_test.py ......................................                   [100%]
+command_test.py .....................                                    [ 29%]
+main_test.py .............                                               [ 47%]
+robot_test.py ......................................                     [100%]
 
-============================= 61 passed in 0.08s =============================
+============================== 72 passed in 0.89s ==============================
 ```
 
 ### Future considerations and improvements
