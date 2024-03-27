@@ -19,6 +19,7 @@ def test_parse_valid(raw_command, expected_command, expected_parameters):
 	assert command == expected_command
 	assert parameters == expected_parameters
 
+
 @pytest.mark.parametrize("raw_command,expected_command,expected_parameters", [
 	("place -1,-1,NORTH", "PLACE", [-1, -1, Direction.NORTH]),
 	("mOvE", "MOVE", []),
@@ -31,6 +32,7 @@ def test_parse_different_case(raw_command, expected_command, expected_parameters
 
 	assert command == expected_command
 	assert parameters == expected_parameters
+
 
 @pytest.mark.parametrize("raw_command", [
 	("UNPLACE -1,-1,NORTH"),
